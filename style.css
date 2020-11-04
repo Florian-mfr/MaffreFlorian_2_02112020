@@ -5,51 +5,96 @@ body
     margin-left: 25px;
     margin-right: 25px;
 }
-a:link
+a
 {
     text-decoration: none;
+    color: inherit;
+}
+header
+{
+    display: grid;
+    max-width: 1440px;
+    
 }
 .logo
 {
-    height: 45px;
-    width: 100px;
-    margin-left: 50px;
-    margin-top: 40px;
+    padding: 2rem 0 0 0;
+    height: 3rem;
+   
 }
 .navbar
 {
-    text-align: justify;
+    text-align: right;
+    margin-top: 0;
 }
 .inscrire
 {
     float: right;
-    margin-right: 75px;
+    margin-right: 1rem;
     color: #0065FC;
+    text-align: right;
+    margin-top: 0.9rem;
 }
 .nav1
 {
     float: right;
     list-style-type: none;
-    padding-right: 65px;
+    margin-right: 5rem;
+    
 }
 .nav2
 {
     float: right;
     list-style-type: none;
-    padding-right: 65px;
+    margin-right: 5rem;
+    
+}
+.h1entete
+{
+    font-size: 0.99rem;
 }
 .searchbar
 {
     display: flex;
 }
+.MapMarker
+{
+    background-color: #F2F2F2;
+    padding: 1rem 1.25rem;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+}
+.champ
+{
+    border-right: none;
+    border-left: none;
+    border-top: #F2F2F2 1px solid;
+    border-bottom: #F2F2F2 1px solid;
+    padding: 1rem 1.25rem;
+    box-sizing: border-box;
+    width: 14rem;
+    font-size: 1rem;
+    font-weight: bold;
+    font-family: "Raleway", "Sans serif";
+}
+
 .button 
 {
     background-color: #0065FC;
-    color: #FFFFFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 0 1rem 1rem 0;
+    padding: 0 1.5rem;
+    font-family: "Raleway", "Sans serif";
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 1rem 1.25rem;
 }
 .filter 
 {
     display: flex;
+    margin-top: 1rem;
 }
 .filtre
 {
@@ -58,14 +103,65 @@ a:link
 }
 .f
 {
-    margin-left: 50px;
+    display: block;
+    align-items: center;
+    margin-right: 5rem;
+    border: 2px solid #d9d9d9;
+    border-radius: 2rem;
+    margin-bottom: 5px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+    font-weight: bold;
+}
+.FilterIcons1
+{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #deebff;
+    color: #0065FC;
+    margin: 0;
+}
+.FilterIcons2
+{
+    padding: 0.5rem 0.7rem;
+    border-radius: 1rem;
+    background-color: #deebff;
+    color: #0065FC;
+    margin: 0;
+}
+.FilterIcons3
+{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #deebff;
+    color: #0065FC;
+    margin: 0;
+}
+.FilterIcons4
+{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    background-color: #deebff;
+    color: #0065FC;
+    margin: 0;
+}
+.Textf
+{
+    padding: 0 0.5rem;
+    font-weight: bold;
+}
+.InformationIcon
+{
+    color: #0065FC;
+    margin-right: 0.5rem;
 }
 .part1
 {
     display: flex;
     flex-direction: row;
-    width: 1448px;
+    width: 1440px;
     height: 630px;
+    justify-content: space-around;
 }   
 .t1
 {
@@ -73,6 +169,9 @@ a:link
     width: 800px;
     height: 20px;
     margin-left: 15px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 1rem;
 }
 .menu1
 {
@@ -95,7 +194,9 @@ a:link
 }
 .infoh
 {
-    margin-left: 18px;
+    margin-left: 15px;
+    margin-top: 0;
+    font-size: 0.9rem;
 }
 .hebergement
 {
@@ -104,6 +205,21 @@ a:link
     border-radius: 18px;
     background-color: #FFFFFF;
     padding-bottom: 10px;
+    box-shadow: 0 3px 5px #c9caccd2;
+}
+.StarsIcon
+{
+    display: inline-block;
+    margin-top: 0;
+    margin-left: 15px;   
+}
+.StarsIconFull
+{
+    color: #0065FC;
+}
+.StarsIconEmpty
+{
+    color: #a7a7a750;
 }
 .menu2
 {
@@ -125,6 +241,7 @@ a:link
     margin-left: 25px;
     border-radius: 17px;
     padding-right: 10px;
+    box-shadow: 0 3px 5px #c9caccd2;
 }
 .imgp
 {
@@ -133,16 +250,138 @@ a:link
     border-radius: 14px 0 0 14px;
     margin: 5px 5px 5px 5px;
 }
-.act1
+.Activite
 {
-    width: 300px;
-    height: 445px;
-    border-radius: 18px;
-    box-shadow: black;
     display: flex;
+    width: 1440px;
+    height: 450px;
+    justify-content: space-around;
+}
+.colonne
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.TitreActivite
+{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-left: 2rem;
+}
+.h2act
+{
+    margin-left: 1rem;
 }
 .VieuxPort
 {
     width: 300px;
     height: 390px;
+    border-radius: 1rem 1rem 0 0;
+}
+.act1
+{
+    width: 300px;
+    height: 445px;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0 3px 5px #c9caccd2;
+}
+.FortdePomegues
+{
+    width: 300px;
+    height: 180px;
+    border-radius: 1rem 1rem 0 0;
+}
+.act2
+{
+    width: 300px;
+    height: 240px;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0 3px 5px #c9caccd2;
+}
+.IlesFrioul
+{
+    width: 300px;
+    height: 110px;
+    border-radius: 1rem 1rem 0 0;
+}
+.act3
+{
+    width: 300px;
+    height: 165px;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0 3px 5px #c9caccd2;
+}
+.ParcCalanques
+{
+    width: 300px;
+    height: 390px;
+    border-radius: 1rem 1rem 0 0;
+}
+.act4
+{
+    width: 300px;
+    height: 445px;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0 3px 5px #c9caccd2;
+}
+.NotreDame
+{
+    width: 300px;
+    height: 140px;
+    border-radius: 1rem 1rem 0 0;
+}
+.act5
+{
+    width: 300px;
+    height: 195px;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0 3px 5px #c9caccd2;
+}
+.ParcLongchamp
+{
+    width: 300px;
+    height: 155px;
+    border-radius: 1rem 1rem 0 0;
+}
+.act6
+{
+    width: 300px;
+    height: 210px;
+    border-radius: 1rem;
+    display: flex;
+    box-shadow: 0 3px 5px #c9caccd2;
+}
+footer
+{
+    background-color: #F2F2F2;
+    width: 1440px;
+    height: 220px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    padding-top: 2rem;
+}
+.liFooter
+{
+    list-style-type: none;
+    padding-top: 15px;
+}
+.h2footer
+{
+    padding-left: 2rem;
+}
+.TextFooter
+{
+    padding-top: 15px;
+}
+.Apropos
+{
+    text-align: left;
 }
