@@ -12,34 +12,43 @@ a
 }
 header
 {
-    display: grid;
+    display: flex;
+    flex-direction: row;
     max-width: 1440px;
+    width: 100%;
+    justify-content: space-between;
     
 }
 .logo
 {
     padding: 2rem 0 0 0;
     height: 3rem;
+    
    
 }
 .navbar
 {
-    text-align: right;
-    margin-top: 0;
+    display: flex;
+    
 }
 .inscrire
 {
     float: right;
-    margin-right: 1rem;
+    margin-right: 2rem;
     color: #0065FC;
-    text-align: right;
-    margin-top: 0.9rem;
+   
+    
+    padding-top: 50px;
+    border-top: 2px solid #F2F2F2;
 }
 .nav1
 {
-    float: right;
+    
     list-style-type: none;
     margin-right: 5rem;
+    padding-top: 50px;
+    border-top: 2px solid #F2F2F2;
+    
     
 }
 .nav2
@@ -47,6 +56,8 @@ header
     float: right;
     list-style-type: none;
     margin-right: 5rem;
+    padding-top: 50px;
+    border-top: 2px solid #F2F2F2;
     
 }
 .h1entete
@@ -100,6 +111,7 @@ header
 {
     list-style-type: none;
     display: flex;
+    flex-wrap: wrap;
 }
 .f
 {
@@ -112,6 +124,10 @@ header
     cursor: pointer;
     transition-duration: 0.1s;
     font-weight: bold;
+}
+.f:hover
+{
+    background-color: #deebff;
 }
 .FilterIcons1
 {
@@ -166,9 +182,8 @@ header
 .t1
 {
     flex-wrap: wrap;
-    width: 800px;
-    height: 20px;
-    margin-left: 15px;
+    width: 880px;
+    margin-left: 50px;
     font-weight: bold;
     font-size: 1.2rem;
     padding-top: 1rem;
@@ -176,13 +191,13 @@ header
 .menu1
 {
     background-color: #f2f2f2;
-    width: 830px;
+    width: 880px;
     height: 625px;
     display: flex;
     flex-wrap: wrap;
     border-radius: 16px;
     justify-content: space-around;
-    margin-top: 35px;
+    margin-top: 15px;
 }
 .imgh
 {
@@ -192,9 +207,67 @@ header
     border-top-right-radius: 13px;
     margin: 0.4em;
 }
-.infoh
+.img-cannebiere
+{
+    background-image: url(imge/images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-port
+{
+    background-image: url(imge/images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-mouettes
+{
+    background-image: url(imge/images/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-mer
+{
+    background-image: url(imge/images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-panier
+{
+    background-image: url(imge/images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-amina
+{
+    background-image: url(imge/images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-soleil
+{
+    background-image: url(imge/images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.img-eau
+{
+    background-image: url(imge/images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.img-bleu
+{
+    background-image: url(imge/images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.InfoHebergement
 {
     margin-left: 15px;
+}
+.infoh
+{
     margin-top: 0;
     font-size: 0.9rem;
 }
@@ -205,13 +278,27 @@ header
     border-radius: 18px;
     background-color: #FFFFFF;
     padding-bottom: 10px;
+    padding-top: 2px;
     box-shadow: 0 3px 5px #c9caccd2;
+}
+.AfficherPlusLink
+{
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+    min-width: 300px;
+    padding-right: 400px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 10px;
 }
 .StarsIcon
 {
-    display: inline-block;
-    margin-top: 0;
-    margin-left: 15px;   
+    display: block;
+    margin-bottom: 5px;
+      
 }
 .StarsIconFull
 {
@@ -225,12 +312,13 @@ header
 {
     background-color: #f2f2f2;
     display: flex;
-    flex-direction: column;
-    width: 420px;
+    flex-wrap: wrap;
+    width: 440px;
     height: 625px;
     border-radius: 16px;
     justify-content: space-around;
     margin: 35px ;
+    padding-top: 9px;
 }
 .populaires
 {
@@ -239,6 +327,7 @@ header
     height: 145px;
     background-color: #FFFFFF;
     margin-left: 25px;
+    margin-right: 25px;
     border-radius: 17px;
     padding-right: 10px;
     box-shadow: 0 3px 5px #c9caccd2;
@@ -250,11 +339,83 @@ header
     border-radius: 14px 0 0 14px;
     margin: 5px 5px 5px 5px;
 }
+.infop
+{
+   display: flex;
+   flex-direction: column;
+}
+@media screen and (max-width: 1050px)
+{   .part1
+    {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        justify-content: space-around;
+       
+        margin-top: 20px;
+    
+    }
+    .menu1
+    {
+        width: 100%;
+        height: auto;
+    }
+    .hebergement
+    {
+        margin-bottom: 20px;
+    }
+    .menu2
+    {
+        background-color: #f2f2f2;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        border-radius: 16px;
+        justify-content: space-around;
+        margin-left: 0px;
+    }
+    .populaires
+    {
+        display: flex;
+        flex-direction: column;
+        width: 245px;
+        height: 200px;
+        border-radius: 18px;
+        background-color: #FFFFFF;
+        padding-bottom: 10px;
+        box-shadow: 0 3px 5px #c9caccd2;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .imgp
+    {
+        width: 245px;
+        height: 40%;
+        border-radius: 13px 13px 0 0;
+        margin: 5px; 
+    }
+    .PopulairesTitle
+    {
+        font-size: 0.9rem;
+    }
+    .infop
+    {
+        margin-left: 15px;
+        margin-top: 0;
+        font-size: 0.9rem;   
+    }
+}
 .Activite
 {
     display: flex;
-    width: 1440px;
-    height: 450px;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
     justify-content: space-around;
 }
 .colonne
@@ -280,6 +441,12 @@ header
     height: 390px;
     border-radius: 1rem 1rem 0 0;
 }
+.img-vieuxport
+{
+    background-image: url(imge/images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
 .act1
 {
     width: 300px;
@@ -287,12 +454,19 @@ header
     border-radius: 1rem;
     display: flex;
     box-shadow: 0 3px 5px #c9caccd2;
+    margin: 20px;
 }
-.FortdePomegues
+.Pomegues
 {
     width: 300px;
     height: 180px;
     border-radius: 1rem 1rem 0 0;
+}
+.img-pomegues
+{
+    background-image: url(imge/images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .act2
 {
@@ -301,12 +475,19 @@ header
     border-radius: 1rem;
     display: flex;
     box-shadow: 0 3px 5px #c9caccd2;
+    margin: 20px;
 }
 .IlesFrioul
 {
     width: 300px;
     height: 110px;
     border-radius: 1rem 1rem 0 0;
+}
+.img-ilesfrioul
+{
+    background-image: url(imge/images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .act3
 {
@@ -315,12 +496,19 @@ header
     border-radius: 1rem;
     display: flex;
     box-shadow: 0 3px 5px #c9caccd2;
+    margin: 20px;
 }
 .ParcCalanques
 {
     width: 300px;
     height: 390px;
     border-radius: 1rem 1rem 0 0;
+}
+.img-parccalanques
+{
+    background-image: url(imge/images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .act4
 {
@@ -329,12 +517,19 @@ header
     border-radius: 1rem;
     display: flex;
     box-shadow: 0 3px 5px #c9caccd2;
+    margin: 20px;
 }
 .NotreDame
 {
     width: 300px;
     height: 140px;
     border-radius: 1rem 1rem 0 0;
+}
+.img-notredame
+{
+    background-image: url(imge/images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .act5
 {
@@ -343,12 +538,19 @@ header
     border-radius: 1rem;
     display: flex;
     box-shadow: 0 3px 5px #c9caccd2;
+    margin: 20px;
 }
 .ParcLongchamp
 {
     width: 300px;
     height: 155px;
     border-radius: 1rem 1rem 0 0;
+}
+.img-parclongchamp
+{
+    background-image: url(imge/images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .act6
 {
@@ -357,11 +559,14 @@ header
     border-radius: 1rem;
     display: flex;
     box-shadow: 0 3px 5px #c9caccd2;
+    margin: 20px;
 }
+
 footer
 {
     background-color: #F2F2F2;
-    width: 1440px;
+    width: 100%;
+    max-width: 1440px;
     height: 220px;
     display: flex;
     justify-content: space-around;
