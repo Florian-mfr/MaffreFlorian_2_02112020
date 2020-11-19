@@ -3,9 +3,9 @@
     <head>
         <meta charset="utf-8">
         <title>Reservia</title>
-        <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/9b0f4b06bf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="style.css">
     </head>
     <body>
         <div id="bloc_page">
@@ -13,23 +13,23 @@
                 <div>
                     <a href="index.html"><img src="imge\images\logo\Reservia.svg" alt="logo reservia" class="logo"></a>
                 </div>
-                <nav class="navbar">
-                    <div class="nav1">
-                        <a href="">Hébergements</a>
-                    </div>
-                    <div class="nav2">
-                        <a href="">Activités</a>
-                    </div>
-                    <div class="inscrire">
-                        <a href=""><strong>S'inscrire</strong></a>
-                    </div>
-                </nav>
+              
+                <div class="nav1">
+                    <a href="#Hebergement">Hébergements</a>
+                </div>
+                <div class="nav2">
+                    <a href="#Activite">Activités</a>
+                </div>
+                <div class="inscrire">
+                    <a href=""><strong>S'inscrire</strong></a>
+                </div>
+              
                    
                
             </header>
 
             <div>
-                <h1 class="h1entete">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <h1 class="h1entete"><strong>Trouvez votre hébergement pour des vacances de rêve</strong></h1>
                 <p>En plein centre ville ou en pleine nature</p>
             </div>
 
@@ -39,7 +39,10 @@
                 </div>
                 <form action="" class="formulaire">
                     <input class="champ" type="text" placeholder="Marseille, France" size="1">
-                    <input class="button" type="button" value="Rechercher">
+                    <div class="button">
+                        <span class="Rechercher">Rechercher</span>
+                        <i class="fas fa-search SearchIcon"></i>
+                    </div>
                 </form>
             </div>
 
@@ -214,7 +217,7 @@
             
 
 
-         <h1 class="TitreActivite">Activités à Marseille</h1>
+         <h1 class="TitreActivite" id="Activite">Activités à Marseille</h1>
 
          <div class="Activite"> 
              <div class="act1">
