@@ -304,6 +304,7 @@ header
 {
     margin-top: 0;
     font-size: 0.9rem;
+    justify-content: space-around;
 }
 .hebergement
 {
@@ -331,7 +332,6 @@ header
 {
     
     margin-bottom: 5px;
-    
       
 }
 .StarsIconFull
@@ -378,10 +378,12 @@ header
    flex-direction: column;
    margin: 5px;
    width: 60%;
+   justify-content: space-around;
 }
 .PopulairesTitle
 {
     margin: 0px;
+    font-size: 0.9rem;
 }
 .Activite
 {
@@ -811,6 +813,8 @@ footer
     flex-direction: column;
     margin: 5px;
     width: 60%;
+    justify-content: space-around;
+    padding-top: 20px;
     }
     .Rechercher
     {
