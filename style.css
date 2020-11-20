@@ -645,6 +645,13 @@ footer
         width: 100%;
     }
 }
+@media screen and (max-width: 750px)
+{
+    footer
+    {
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 730px)
 {
     .TitreActivite
@@ -802,19 +809,19 @@ footer
     }
     .imgp
     {
-    width: 40%;
-    height: auto;
-    border-radius: 14px 0 0 14px;
-    margin: 5px 5px 5px 5px;
+        width: 40%;
+        height: auto;
+        border-radius: 14px 0 0 14px;
+        margin: 5px 5px 5px 5px;
     }
     .infop
     {
-    display: flex;
-    flex-direction: column;
-    margin: 5px;
-    width: 60%;
-    justify-content: space-around;
-    padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        margin: 5px;
+        width: 60%;
+        justify-content: space-around;
+        padding-top: 20px;
     }
     .Rechercher
     {
@@ -829,94 +836,4 @@ footer
         display: inherit;  
     }
 }
-@media screen and (max-width: 730px)
-{
-    .TitreActivite
-    {
-        text-align: center;
-        padding: 0;
-    }
-    .act1
-    {
-        width: 300px;
-        height: 165px;
-        border-radius: 1rem;
-        display: flex;
-        box-shadow: 0 3px 5px #c9caccd2;
-        margin: 20px;
-    }
-    .VieuxPort
-    {
-        width: 300px;
-        height: 110px;
-        border-radius: 1rem 1rem 0 0; 
-    }
-    .act2
-    {
-        width: 300px;
-        height: 165px;
-        border-radius: 1rem;
-        display: flex;
-        box-shadow: 0 3px 5px #c9caccd2;
-        margin: 20px;
-    }
-    .Pomegues
-    {
-        width: 300px;
-        height: 110px;
-        border-radius: 1rem 1rem 0 0; 
-    }
-    .act4
-    {
-        width: 300px;
-        height: 165px;
-        border-radius: 1rem;
-        display: flex;
-        box-shadow: 0 3px 5px #c9caccd2;
-        margin: 20px;
-    }
-    .ParcCalanques
-    {
-        width: 300px;
-        height: 110px;
-        border-radius: 1rem 1rem 0 0; 
-    }
-    .act5
-    {
-        width: 300px;
-        height: 165px;
-        border-radius: 1rem;
-        display: flex;
-        box-shadow: 0 3px 5px #c9caccd2;
-        margin: 20px;
-    }
-    .NotreDame
-    {
-        width: 300px;
-        height: 110px;
-        border-radius: 1rem 1rem 0 0; 
-    }
-    .act6
-    {
-        width: 300px;
-        height: 165px;
-        border-radius: 1rem;
-        display: flex;
-        box-shadow: 0 3px 5px #c9caccd2;
-        margin: 20px;
-    }
-    .ParcLongchamp
-    {
-        width: 300px;
-        height: 110px;
-        border-radius: 1rem 1rem 0 0; 
-    }
 
-}
-@media screen and (max-width: 750px)
-{
-    footer
-    {
-        flex-direction: column;
-    }
-}
