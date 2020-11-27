@@ -2,8 +2,7 @@ body
 {
     font-family: 'Raleway', sans-serif;
     font-size: 13px;
-    max-width: 1440px;
-    margin-left: 25px;    
+    margin: 0 10px 0 10px;    
 }
 a
 {
@@ -14,23 +13,17 @@ header
 {
     display: grid;
     grid-template-columns: 1fr 200px 200px 200px; 
-    /*max-width: 1440px;*/
     width: 100%;
     justify-content: space-between;
-    
-    
 }
 .logo
 {
     padding: 2rem 0 0 0;
     height: 3rem;
-    
-   
 }
 
 .inscrire
 {
-   
     margin-right: 2rem;
     color: #0065FC;
     padding:50px 3rem 0 3rem;
@@ -44,11 +37,9 @@ header
 }
 .nav1
 {
-    
     list-style-type: none;
     padding:50px 3rem 0 3rem;
     border-top: 2px solid #F2F2F2;
-   
 }
 .nav1:hover
 {
@@ -64,7 +55,6 @@ header
 }
 .nav2
 {
-   
     list-style-type: none;
     padding:50px 0 0 4rem;
     border-top: 2px solid #F2F2F2;    
@@ -81,15 +71,14 @@ header
     border-color: #0065FC;
     font-weight: bold;
 }
-
 .h1entete
 {
     font-size: 0.99rem;
+    margin-top: 30px;
 }
 .searchbar
 {
     display: flex;
-    
 }
 .MapMarker
 {
@@ -153,13 +142,14 @@ header
     cursor: pointer;
     transition-duration: 0.1s;
     font-weight: bold;
-    
 }
 .f:hover
 {
     background-color: #deebff;
     border: 3px;
     box-shadow: 0 3px 5px #c9caccd2;
+    transition-property: background-color;
+    transition-duration: 0.5s;
 }
 .FilterIcons1
 {
@@ -214,24 +204,26 @@ header
 }   
 .t1
 {
-    flex-wrap: wrap;
-    width: 880px;
     margin-left: 50px;
     font-weight: bold;
     font-size: 1.2rem;
     padding-top: 1rem;
 }
-.menu1
+.menu1-conteneur
 {
     background-color: #f2f2f2;
-    width: 880px;
-    height: 625px;
+    width: 65%;
+    height: auto;
+    max-height: 625px;
+    border-radius: 16px;
+    margin: 15px 15px 15px 0;
+}
+.menu1
+{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border-radius: 16px;
-    justify-content: space-around;
-    margin-top: 15px;
+    justify-content: space-around; 
 }
 .imgh
 {
@@ -298,7 +290,7 @@ header
 }
 .InfoHebergement
 {
-    margin-left: 15px;
+    margin-left: 10px;
 }
 .infoh
 {
@@ -314,25 +306,18 @@ header
     background-color: #FFFFFF;
     padding-bottom: 10px;
     padding-top: 2px;
+    margin: 10px;
     box-shadow: 0 3px 5px #c9caccd2;
 }
 .AfficherPlusLink
 {
-    display: inline-flex;
-    flex-wrap: wrap;
-    width: 100%;
-    min-width: 300px;
-    padding-right: 400px;
     font-weight: bold;
     font-size: 1.2rem;
-    padding-top: 1rem;
-    padding-bottom: 10px;
+    margin: 30px 0 20px 50px;
 }
 .StarsIcon
 {
-    
-    margin-bottom: 5px;
-      
+    margin-bottom: 5px;  
 }
 .StarsIconFull
 {
@@ -347,11 +332,16 @@ header
     background-color: #f2f2f2;
     display: flex;
     flex-wrap: wrap;
-    width: 440px;
-    height: 625px;
+    width: 30%;
+    height: auto;
+    max-height: 625px;
     border-radius: 16px;
     justify-content: space-around;
-    margin:15px 35px 0 0;
+    margin:10px;
+}
+.t1-populaire
+{
+    margin-left: 0px;
 }
 .populaires
 {
@@ -376,7 +366,7 @@ header
 {
    display: flex;
    flex-direction: column;
-   margin: 5px;
+   margin: 10px;
    width: 60%;
    justify-content: space-around;
 }
@@ -385,12 +375,15 @@ header
     margin: 0px;
     font-size: 0.9rem;
 }
+.Populaires_p
+{
+    margin: auto 0;
+}
 .Activite
 {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    /*max-width: 1440px;*/
     height: auto;
     justify-content: space-around;
 }
@@ -542,7 +535,6 @@ footer
 {
     background-color: #F2F2F2;
     width: 100%;
-    /*max-width: 1440px;*/
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -575,18 +567,17 @@ footer
         width: 100%;
         height: auto;
         justify-content: space-around;
-       
-        margin-top: 20px;
-    
+       margin-top: 20px;
     }
     .t1
     {
-        width: 100%;
+        width: 90%;
     }
-    .menu1
+    .menu1-conteneur
     {
         width: 100%;
         height: auto;
+        max-height: none;
     }
     .hebergement
     {
@@ -612,37 +603,33 @@ footer
         height: 200px;
         border-radius: 18px;
         background-color: #FFFFFF;
-        padding-bottom: 10px;
+        padding-bottom: 0;
         box-shadow: 0 3px 5px #c9caccd2;
         margin-top: 15px;
         margin-bottom: 15px;
-        margin-left: 0;
-        margin-right: 0;
+        margin-left: 5px;
+        margin-right: 5px;
     }
     .imgp
     {
         width: 245px;
-        height: 45%;
+        height: 50%;
         border-radius: 13px 13px 0 0;
-        margin: 5px; 
+        margin: 5px 5px 0 5px; 
     }
     .PopulairesTitle
     {
         font-size: 0.9rem;
-        margin: 0;
+        margin: 0px;
     }
     .infop
     {
-        font-size: 0.9rem;  
+        display: flex;
+        justify-content: space-around;
+        font-size: 0.9rem; 
+        margin: 10px;
         width: 100%;
-        height: 40%; 
-    }
-    .AfficherPlusLink
-    {
-        text-align: center;
-        margin: 0;
-        padding: 20px 0 20px 180px;
-        width: 100%;
+        height: 50%; 
     }
 }
 @media screen and (max-width: 750px)
@@ -650,6 +637,10 @@ footer
     footer
     {
         flex-direction: column;
+    }
+    .FootText
+    {
+        margin-left: 30px;
     }
 }
 @media screen and (max-width: 730px)
@@ -742,7 +733,7 @@ footer
     {
         display: grid;
         grid-template-columns: 50% 50%;
-        grid-template-rows: 1fr 40px;
+        grid-template-rows: 1fr 70px;
     }
     .logo
     {
@@ -755,13 +746,14 @@ footer
         grid-row-start: 1;
         border-top: none;
         text-align: right;
+        margin-right: 10px;
     }
     .nav1
     {
         grid-column-start: 1;
         grid-row-start: 2;
         border-top: none;
-        padding: 10px 30% 10px 30%;
+        padding: 30px 30% 10px 30%;
         border-bottom: 2px solid #F2F2F2;
     }
     .nav2
@@ -769,17 +761,21 @@ footer
         grid-column-start: 2;
         grid-row-start: 2;
         border-top: none;
-        padding: 10px 30% 10px 40%;
+        padding: 30px 30% 10px 40%;
         border-bottom: 2px solid #F2F2F2;
     }
 }
 
 @media screen and (max-width: 600px)
 {
-    
-    .menu1
+    .filter
+    {
+        flex-direction: column;
+    }
+    .menu1-conteneur
     {
         background-color: #FFFFFF;
+        margin: 0;
     }
     .t1
     {
@@ -795,6 +791,11 @@ footer
     .imgh
     {
         width: 290px;
+    }
+    .AfficherPlusLink
+    {
+        text-align: center;
+        margin: 20px 0 20px 0;
     }
     .populaires
     {
@@ -818,10 +819,14 @@ footer
     {
         display: flex;
         flex-direction: column;
-        margin: 5px;
+        margin: 5px 0 0 5px;
         width: 60%;
+        height: 100%;
         justify-content: space-around;
-        padding-top: 20px;
+    }
+    .Populaires_p
+    {
+        margin: 15px 0;
     }
     .Rechercher
     {
