@@ -9,6 +9,10 @@ a
     text-decoration: none;
     color: inherit;
 }
+h3
+{
+    font-size: 18px;
+}
 header
 {
     display: grid;
