@@ -51,12 +51,6 @@ header
     font-weight: bold;
     border-color: #0065FC;
 }
-.nav1[data-active=true]
-{
-    color: #0065FC;
-    border-color: #0065FC;
-    font-weight: bold;
-}
 .nav2
 {
     list-style-type: none;
@@ -68,12 +62,6 @@ header
     color: #0065FC;
     font-weight: bold;
     border-color: #0065FC;
-}
-.nav2[data-active=true]
-{
-    color: #0065FC;
-    border-color: #0065FC;
-    font-weight: bold;
 }
 .h1entete
 {
@@ -606,7 +594,7 @@ footer
         display: flex;
         flex-direction: column;
         width: 245px;
-        height: 200px;
+        height: 220px;
         border-radius: 18px;
         background-color: #FFFFFF;
         padding-bottom: 0;
@@ -619,7 +607,7 @@ footer
     .imgp
     {
         width: 245px;
-        height: 50%;
+        height: 60%;
         border-radius: 13px 13px 0 0;
         margin: 5px 5px 0 5px; 
     }
