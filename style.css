@@ -13,7 +13,7 @@ h3
 {
     font-size: 18px;
 }
-header
+nav
 {
     display: grid;
     grid-template-columns: 1fr 200px 200px 200px; 
